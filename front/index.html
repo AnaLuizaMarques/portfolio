@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ana Luiza Marques</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/front/sera.png" alt="Logo Ana Luiza" />
+      </div>
+      <ul>
+        <li>
+          <a target="_blank" href="https://github.com/AnaLuizaMarques"
+            >Github</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/analuizasmarques/"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="mailto:analuizasmarques1@gmail.com">Gmail</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="container">
+        <div class="name">
+          <h1>Ana Luiza Marques</h1>
+          <h5>Full Stack Developer Jr.</h5>
+        </div>
+
+        <div onclick="displayAbout()" id="arrow">
+          <i id="animation" class="fas fa-angle-double-down"></i>
+        </div>
+
+        <div style="display: none" id="about">
+          <p>
+            Olá, meu nome é Ana e seja muito bem vinde ao meu portifólio! Estou
+            cursando bacharelado em Sistemas de Informação e NanoDegree Full
+            Stack Developer na Gama Academy. Possuo conhecimento de JavaScript,
+            HTML e CSS, além disso, tenho conhecimento básico em Python e
+            Kotlin.
+          </p>
+        </div>
+
+        <div class="form">
+          <div>
+            <p>Deixe seu contato:</p>
+          </div>
+          <form action="">
+            <input type="text" placeholder="Insira aqui seu melhor email!" />
+            <button>Enviar!</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script>
+      function displayAbout() {
+        let arrow = document.getElementById('animation')
+        arrow.classList.toggle('rotate')
+        let display = document.getElementById('about')
+        display.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
