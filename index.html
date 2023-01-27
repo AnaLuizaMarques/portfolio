@@ -11,12 +11,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
     <title>Ana Luiza Marques</title>
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="logo.png" alt="Logo Ana Luiza" />
+        <img src="img/logo.png" alt="Logo Ana Luiza" id="imgLogo"/>
       </div>
       <ul>
         <li>
@@ -38,25 +39,47 @@
     </header>
     <main>
       <section class="container">
-        <div class="name">
-          <h1>Ana Luiza Marques</h1>
-          <h5>Full Stack Developer Jr.</h5>
+        <br>
+        <div id="cont">
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+           <div class="mySlides fade">
+              <img src="img/Teste2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img/Vintage.png" style="width:100%">
+              <button class="btn">See Project</button>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img/YSL.jpg" style="width:100%">
+              <button class="btn">See Project</button>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img/Charlote.png" style="width:100%">
+              <button class="btn">See Project</button>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
         </div>
 
-        <div onclick="displayAbout()" id="arrow">
-          <i id="animation" class="fas fa-angle-double-down"></i>
-        </div>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
 
-        <div style="display: none" id="about">
-          <p>
-            Olá, meu nome é Ana e seja muito bem vinde ao meu portifólio! Estou
-            cursando bacharelado em Sistemas de Informação e NanoDegree Full
-            Stack Developer na Gama Academy. Possuo conhecimento de JavaScript,
-            HTML e CSS, além disso, tenho conhecimento básico em Python e
-            Kotlin.
-          </p>
         </div>
-
+        </div>
         <div class="form">
           <div>
             <p>Deixe seu contato:</p>
@@ -68,13 +91,9 @@
         </div>
       </section>
     </main>
-    <script>
-      function displayAbout() {
-        let arrow = document.getElementById('animation')
-        arrow.classList.toggle('rotate')
-        let display = document.getElementById('about')
-        display.classList.toggle('active')
-      }
-    </script>
   </body>
+  <footer>
+    <br>
+    <br>
+  </footer>
 </html>
