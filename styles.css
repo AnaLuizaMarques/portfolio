@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: rgb(58, 55, 61);
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 ul {
@@ -18,7 +19,7 @@ a {
 }
 
 body {
-  background-image: url(./backgroud.jpg);
+  background-image: url(img/backgroud.jpg);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -32,7 +33,7 @@ header {
   margin-bottom: 55px;
 }
 
-img {
+#imgLogo {
   margin-left: 50px;
 }
 
@@ -80,15 +81,6 @@ header ul li:hover {
   to {
     visibility: hidden;
   }
-}
-
-.rotate {
-  transform: rotate(180deg);
-  transition: 300ms;
-}
-
-.active {
-  display: block !important;
 }
 
 #about p {
@@ -156,14 +148,6 @@ header ul li:hover {
     margin-left: 0px;
   }
 
-  .container .name h1 {
-    font-size: 30px;
-  }
-
-  .container .name h5 {
-    font-size: 15px;
-  }
-
   ul {
     font-size: 12px;
   }
@@ -172,4 +156,118 @@ header ul li:hover {
     max-width: 80%;
     text-align: justify;
   }
+}
+
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-left: -50%;
+  padding: 16px;
+  color: #7D4D45;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-left: -50%;
+  padding: 16px;
+  color: #7D4D45;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.btn {
+  background-color: #7D4D45;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #3f2824;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

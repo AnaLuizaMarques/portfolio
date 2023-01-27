@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <title>Ana Luiza Marques</title>
   </head>
   <body>
@@ -46,22 +46,28 @@
 
             <!-- Full-width images with number and caption text -->
            <div class="mySlides fade">
-              <img src="img/Teste2.png" style="width:100%">
+              <img src="img/intro.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
               <img src="img/Vintage.png" style="width:100%">
-              <button class="btn">See Project</button>
+              <form action="/pages/vintage.html">
+                <button class="btn">See Project</button>
+              </form>
             </div>
 
             <div class="mySlides fade">
               <img src="img/YSL.jpg" style="width:100%">
-              <button class="btn">See Project</button>
+              <form action="/pages/ysl.html">
+                <button class="btn">See Project</button>
+              </form>
             </div>
 
             <div class="mySlides fade">
               <img src="img/Charlote.png" style="width:100%">
-              <button class="btn">See Project</button>
+              <form action="/pages/charlote.html">
+                <button class="btn">See Project</button>
+              </form>
             </div>
 
             <!-- Next and previous buttons -->
@@ -82,11 +88,11 @@
         </div>
         <div class="form">
           <div>
-            <p>Deixe seu contato:</p>
+            <p>Leave your contact:</p>
           </div>
           <form action="">
-            <input type="text" placeholder="Insira aqui seu melhor email!" />
-            <button>Enviar!</button>
+            <input type="text" placeholder="Enter your best email here!" />
+            <button>Send!</button>
           </form>
         </div>
       </section>
